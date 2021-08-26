@@ -4,6 +4,6 @@ class Solution {
         for(int i = 0; i < nums.length; i++) {
             to_return[i] = nums[nums[i]];
         }
-    return to_return;
+        return to_return;
     }
 }
