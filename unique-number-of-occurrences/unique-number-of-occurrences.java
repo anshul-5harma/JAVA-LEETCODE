@@ -6,8 +6,8 @@ class Solution {
         }
         Set<Integer> set = new HashSet();
         for (var entry : map.entrySet()) {
-    set.add(entry.getValue());
-}
+            set.add(entry.getValue());
+        }
         return set.size() == map.size();
     }
 }
