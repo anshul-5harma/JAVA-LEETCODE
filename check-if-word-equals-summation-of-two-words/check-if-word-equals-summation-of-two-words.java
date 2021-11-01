@@ -12,9 +12,6 @@ class Solution {
         for(int i = 0; i < targetWord.length(); i++) {
             targetSum += targetWord.charAt(i) - 'a';
         }
-        System.out.println(firstSum);
-        System.out.println(secondSum);
-        System.out.println(targetSum);
         return Integer.valueOf(firstSum) + Integer.valueOf(secondSum) == Integer.valueOf(targetSum);
     }
 }
