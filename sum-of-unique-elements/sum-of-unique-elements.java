@@ -9,7 +9,7 @@ class Solution {
             if(entry.getValue() == 1) {
                 sum += entry.getKey();
             }
-}
+        }
         return sum;
     }
 }
