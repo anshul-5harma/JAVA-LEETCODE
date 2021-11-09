@@ -5,14 +5,11 @@ class Solution {
             if(logs[i].equals("../")) {
                 if(!stack.isEmpty()) {
                     stack.pop();
-                } else {
-                    
                 }
             } else if(!logs[i].equals("./")) {
                 stack.push(logs[i]);
             }
         }
-        System.out.println(stack);
         return stack.size();
     }
 }
