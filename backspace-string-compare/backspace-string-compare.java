@@ -22,10 +22,11 @@ class Solution {
         }
         if(t_stack.size() != s_stack.size()) {
             return false;
-        }
-        while(!t_stack.isEmpty() && !s_stack.isEmpty()) {
-            if(t_stack.pop() != s_stack.pop()) {
-                return false;
+        } else {
+            while(!t_stack.isEmpty() && !s_stack.isEmpty()) {
+                if(t_stack.pop() != s_stack.pop()) {
+                    return false;
+                }
             }
         }
         return true;
