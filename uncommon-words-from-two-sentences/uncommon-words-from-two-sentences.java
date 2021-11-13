@@ -15,10 +15,6 @@ class Solution {
                 list.add(entry.getKey());
             }
         }
-        String[] to_return = new String[list.size()];
-        for(int i = 0; i < to_return.length; i++) {
-            to_return[i] = list.get(i);
-        }
-        return to_return;
+        return list.toArray(new String[list.size()]);
     }
 }
