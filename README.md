@@ -1,2 +1,2 @@
 # JAVA-LEETCODE
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
+A Collection of Leetcode problem solutions with a hope to help the community 😀
