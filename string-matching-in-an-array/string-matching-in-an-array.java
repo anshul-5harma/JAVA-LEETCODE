@@ -3,7 +3,7 @@ class Solution {
         List<String> list = new ArrayList();
         for(int i = 0; i < words.length; i++) {
             for(int j = 0; j < words.length; j++) {
-                if(i != j && words[j].indexOf(words[i]) >= 0) {
+                if(i != j && words[j].indexOf(words[i]) != -1) {
                     list.add(words[i]);
                     break;
                 }
