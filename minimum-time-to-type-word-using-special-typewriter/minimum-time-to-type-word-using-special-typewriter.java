@@ -3,8 +3,7 @@ class Solution {
         char current = 'a';
         int counter = 0;
         for(int i = 0; i < word.length(); i++) {
-            int distance = Math.abs(word.charAt(i) - current);
-            int absolute = Math.min(distance, 26 - distance);
+            int absolute = Math.min(Math.abs(word.charAt(i) - current), 26 - Math.abs(word.charAt(i) - current));
             counter += absolute + 1;
             current = word.charAt(i);
         }
