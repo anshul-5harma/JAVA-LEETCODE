@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/10/2021 at 17:28)](https://leetcode.com/problems/masking-personal-information/discuss/1603295/JAVA-SOUTION)  
 <h2>831. Masking Personal Information</h2><h3>Medium</h3><hr><div><p>You are given a personal information string <code>s</code>, representing either an <strong>email address</strong> or a <strong>phone number</strong>. Return <em>the <strong>masked</strong> personal information using the below rules</em>.</p>
 
 <p><u><strong>Email address:</strong></u></p>
