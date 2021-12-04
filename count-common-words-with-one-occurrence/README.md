@@ -1,3 +1,4 @@
+[Discussion Post (created on 4/11/2021 at 2:6)](https://leetcode.com/problems/count-common-words-with-one-occurrence/discuss/1610742/JAVA-Solution)  
 <h2>2085. Count Common Words With One Occurrence</h2><h3>Easy</h3><hr><div><p>Given two string arrays <code>words1</code> and <code>words2</code>, return <em>the number of strings that appear <strong>exactly once</strong> in <b>each</b>&nbsp;of the two arrays.</em></p>
 
 <p>&nbsp;</p>
