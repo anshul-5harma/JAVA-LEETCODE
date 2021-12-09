@@ -1,3 +1,4 @@
+[Discussion Post (created on 9/11/2021 at 0:25)](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/discuss/1619169/JAVA-Perpendicular-distance)  
 <h2>1828. Queries on Number of Points Inside a Circle</h2><h3>Medium</h3><hr><div><p>You are given an array <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> is the coordinates of the <code>i<sup>th</sup></code> point on a 2D plane. Multiple points can have the <strong>same</strong> coordinates.</p>
 
 <p>You are also given an array <code>queries</code> where <code>queries[j] = [x<sub>j</sub>, y<sub>j</sub>, r<sub>j</sub>]</code> describes a circle centered at <code>(x<sub>j</sub>, y<sub>j</sub>)</code> with a radius of <code>r<sub>j</sub></code>.</p>
