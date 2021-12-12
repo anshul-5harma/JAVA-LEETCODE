@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/11/2021 at 0:18)](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/discuss/1624495/JAVA-Solution)  
 <h2>2068. Check Whether Two Strings are Almost Equivalent</h2><h3>Easy</h3><hr><div><p>Two strings <code>word1</code> and <code>word2</code> are considered <strong>almost equivalent</strong> if the differences between the frequencies of each letter from <code>'a'</code> to <code>'z'</code> between <code>word1</code> and <code>word2</code> is <strong>at most</strong> <code>3</code>.</p>
 
 <p>Given two strings <code>word1</code> and <code>word2</code>, each of length <code>n</code>, return <code>true</code> <em>if </em><code>word1</code> <em>and</em> <code>word2</code> <em>are <strong>almost equivalent</strong>, or</em> <code>false</code> <em>otherwise</em>.</p>
