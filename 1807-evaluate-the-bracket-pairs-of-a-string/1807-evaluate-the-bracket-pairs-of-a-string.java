@@ -5,18 +5,21 @@ class Solution {
             map.put(list.get(0), list.get(1));
         }
         StringBuilder sb = new StringBuilder();
-        int index = 0;
+        StringBuilder holder = new StringBuilder();
+        boolean key = false;
         for(int i = 0; i < s.length(); i++) {
-            if(s.charAt(i) == '(') {
-                System.out.println(s.substring(index, i));
-                sb.append(s.substring(index, i));
-                index = i + 1;
-            } else if(s.charAt(i) == ')') {
-                sb.append(map.getOrDefault(s.substring(index, i), "?"));
-                index = i + 1;
+            char ch = s.charAt(i);
+            if(ch == '(') {
+                key = true;
+            } else if(ch == ')') {
+                key = false;
+                sb.append(map.getOrDefault(holder.toString(), "?"));
+                holder.setLength(0);
+            } else {
+                if(key) holder.append(ch);
+                else sb.append(ch);
             }
         }
-        sb.append(s.substring(index));
         return sb.toString();
     }
 }
