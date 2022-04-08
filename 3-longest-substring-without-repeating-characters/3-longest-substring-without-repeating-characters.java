@@ -9,8 +9,7 @@ class Solution {
             if (set.contains(s.charAt(right))) {
                 set.remove(s.charAt(left));
                 left++;
-            }
-            else {
+            } else {
                 set.add(s.charAt(right));
                 right++;
                 max = Math.max(max, set.size());
