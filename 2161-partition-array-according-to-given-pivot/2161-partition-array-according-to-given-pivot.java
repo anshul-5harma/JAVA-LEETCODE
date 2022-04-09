@@ -13,9 +13,15 @@ class Solution {
             }
         }
         int counter = 0;
-        lessThanPivot.addAll(equal);
-        lessThanPivot.addAll(moreThanPivot);
         for(Integer number : lessThanPivot) {
+            nums[counter] = number;
+            counter++;
+        }
+        for(Integer number : equal) {
+            nums[counter] = number;
+            counter++;
+        }
+        for(Integer number : moreThanPivot) {
             nums[counter] = number;
             counter++;
         }
