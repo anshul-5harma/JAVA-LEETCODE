@@ -14,17 +14,33 @@
  * }
  */
 class Solution {
+    int sum = 0;
     public int sumEvenGrandparent(TreeNode root) {
-        int[] sum = new int[1];
-        sum[0] = 0;
-        compute(root, null, null, sum);
-        return sum[0];
+        compute(root);
+        return sum;
     }
     
-    public void compute(TreeNode root, TreeNode parent, TreeNode grandParent, int[] sum) {
+    public void compute(TreeNode root) {
         if(root == null) return;
-        compute(root.left, root, parent, sum);
-        compute(root.right, root, parent, sum);
-        if(grandParent != null && grandParent.val % 2 == 0) sum[0] += root.val;
+        if(root.val % 2 == 0) {
+            if(root.left != null) {
+                if(root.left.left != null) {
+                    sum += root.left.left.val;
+                }
+                if(root.left.right != null) {
+                    sum += root.left.right.val;
+                }
+            }
+            if(root.right != null) {
+                if(root.right.right != null) {
+                    sum += root.right.right.val;
+                }
+                if(root.right.left != null) {
+                    sum += root.right.left.val;
+                }
+            }
+        }
+        compute(root.left);
+        compute(root.right);
     }
 }
