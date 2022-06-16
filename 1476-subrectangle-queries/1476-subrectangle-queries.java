@@ -1,5 +1,5 @@
 class SubrectangleQueries {
-    private int[][] rectangle;
+    int[][] rectangle;
     public SubrectangleQueries(int[][] rectangle) {
         this.rectangle = rectangle;
     }
@@ -7,7 +7,7 @@ class SubrectangleQueries {
     public void updateSubrectangle(int row1, int col1, int row2, int col2, int newValue) {
         for(int i = row1; i <= row2; i++) {
             for(int j = col1; j <= col2; j++) {
-                this.rectangle[i][j] = newValue;
+                rectangle[i][j] = newValue;
             }
         }
     }
